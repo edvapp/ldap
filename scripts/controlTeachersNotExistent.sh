@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Check vor Teachers, who are listet in a Group, but have no account
+
 echo "Please type LDAP - Password"
 read LDAPPASSWORD
 
