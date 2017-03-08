@@ -14,6 +14,5 @@ read LDAPPASSWORD
 
 # search for posixAccount and just show attribute
 
-#ldapsearch -LLL -D "cn=admin,dc=app,dc=net" -W -h ldap01 -b "ou=containerTeachers,ou=users,dc=app,dc=net" dn uidNumber | sort 
 ldapsearch -LLL -D "$ADMIN_ACCOUNT_NAME" -h ldap01 -w $LDAPPASSWORD -b "$CONTAINER_NAME" -S uidNumber uidNumber dn 
 
